@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-[#0F051E] w-full">
+    <!-- header nav -->
+    <header class="bg-current relative lg:border-hidden w-full z-10 bg-white px-4 py-5 shadow md:flex md:items-center lg:justify-between 2xl:hover:animate-pulse duration-0.2 2xl:hover:text-transparent duration-0.5">
+        <!-- <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#" class="font-bold text-lg text-pink-500 block py-6">Andika Prasetyo</a>
+                </div>
+                <div class="flex items-center px-4">    
+                    <button id="menu" name="menu" class="block absolute right-4">
+                        <span class="menu-line"></span>
+                            <span class="menu-line"></span>
+                            <span class="menu-line"></span>
+                    </button>
+                </div>
+            </div>Z
+        </div> -->
+        <div class="flex justify-between mx-3 items-center border rounded-xl lg:bg-hidden px-25% 2xl:border-hidden bg-cyan-500 lg:bg-hidden">
+            <span class="text-2xl px-1 font-semibold font-[popins] cursor-pointer hover:text-white">
+               <i> Andika Prasetyo
+            </span>
+            <span class="text-3xl cursor-pointer md:hidden block">
+                <ion-icon name="menu"onclick="menu(this)" class="hover:text-white"></ion-icon>
+            </span>
+        </div>
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static bg-white absolute w-full text-black left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all  ease-induration-500">
+            <li class="mx-2 my-6 md:my-0"><a href="#" class="text-md hover:text-cyan-500 duration-1100">Home</a></li>
+            <li class="mx-2 my-6 md:my-0"><a href="#" class="text-sm hover:text-cyan-500 duration-1100">About</a></li>
+            <li class="mx-2 my-6 md:my-0"><a href="#" class="text-sm hover:text-cyan-500 duration-1100">Contact</a></li>
+            <li class="mx-2 my-6 md:my-0"><a href="#" class="text-sm hover:text-cyan-500 duration-1100">Blog's</a></li>
+            <button class="bg-cyan-400 font-[popins] duration-500 px-6 py-2 mx-2 hover:bg-cyan-500 rounded text-white font-normal hover:text-pink-500 2xl:hover:text-cyan-500">
+                get started
+            </button>
+        </ul>
+    </header>
+    <!-- section home -->
+    <section id="Home" class="pt-36">
+        <div class="container max-lg:w-auto ">
+            <div class="flex flex-wrap">
+                <div class="lg:px-[135px] w-full self-center px-4 lg:w-1/2">
+                    <h1 id="tes" class="text-base font-semibold text-[#db2777] md:text-xl">Hallo nama saya<span id="bergerak" class="block font-bold text-cyan-500 text-3xl lg:text-4xl cursor-pointer"> </span></h1>
+                    <h2 class="text-pink-500 text-lg mb-5 lg:text-2xl pt-4">Back-End</h2>
+                    <p class="font-medium text-cyan-500 mb-10">Belajar web programan itu mudah dan gampang bukan. <span class="text-cyan-500 font-bold">bukan!</span></p>
+                    <a href="https://www.instagram.com/andkprasx_2" class="text-base text-white font-semibold bg-[#db2777] px-8 py-3 rounded-full hover:shadow-lg hover:bg-[#be185d] duration-400 ease-in-out hover:text-cyan-500">instagram saya</a>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="mt-10 relative lg:mt-9 lg:right-0">
+                        <img src="./image/dika.png" alt="andika" class="max-w-full mx-auto hover:animate-pulse transition-all 2s">
+                        <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 lg:scale-145 hover:animate-pulse duration-1000 lg:hidden">
+                            <svg width="400" height="400"  viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#FF0066" d="M39.9,-8.9C47.3,9.8,45.8,35.4,34.2,42.9C22.5,50.4,0.7,39.7,-11.5,27.9C-23.7,16.2,-26.4,3.4,-22.9,-10C-19.4,-23.3,-9.7,-37.2,3.3,-38.3C16.3,-39.4,32.5,-27.6,39.9,-8.9Z" transform="translate(100 100) scale(1.1)" />
+                             </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="pt-36">
+        <div class="container">
+            <div class="lg:px-[135px] flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2 ">
+                    <h4 class="font-bold uppercase text-[#db2777] text-lg mb-3">Tentang Saya</h4>
+                    <h2 class="font-bold text-cyan-500 text-3xl mb-5 max-w-md lg:text-4xl">Yuk,rajin-rajin melihat documentasi</h2>
+                    <p class="font-medium text-slate-500 max-w-xl lg:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A libero maiores totam alias quis sequi tempore magnam, in porro sunt.</p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-semibold text-cyan-500 text-2xl lg:text-3xl lg:pt-10">Mari Berteman</h3>
+                    <p class="font-medium text-base text-slate-500 mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod pariatur nulla. Temporibus facilis ipsam corrupti recusandae consectetur commodi alias harum.</p>
+                    <div class="flex items-center">
+                        <!-- instagram -->
+                        <a href="https://www.youtube.com/watch?v=8Ea4oq8qFtM&t=2975s" target="_blank" class="border rounded-full w-6 h-6 mr-3 flex items-center justify-center border-slate-900 hover:border-pink-500 hover:bg-pink-500 hover:text-white text-pink-500"><ion-icon class="fill-current" name="logo-instagram"></ion-icon></a> 
+                        <!-- github -->
+                        <!-- instagram -->
+                        <a href="https://github.com/andikaprasety/andikaprasety" target="_blank" class="border rounded-full w-6 h-6 mr-3 flex items-center justify-center border-slate-900 hover:border-pink-500 hover:bg-pink-500 hover:text-white text-pink-500"><ion-icon class="fill-current" name="logo-github"></ion-icon></a> 
+                        <!-- Contact-->
+                        <a href="https://wa.me/6282166410034" target="_blank" class="border rounded-full w-6 h-6 mr-3 flex items-center justify-center border-slate-900 hover:border-pink-500 hover:bg-pink-500 hover:text-white text-pink-500"><ion-icon class="fill-current" name="logo-whatsapp"></ion-icon></a> 
+                        <!-- Tiktok -->
+                        <a href="https://www.tiktok.com/@andikap_2005" target="_blank" class="border rounded-full w-6 h-6 mr-3 flex items-center justify-center border-slate-900 hover:border-pink-500 hover:bg-pink-500 hover:text-white text-pink-500"><ion-icon class="fill-current" name="logo-tiktok"></ion-icon></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skill" class="pt-32">
+        <div class="container">
+            <div class="flex flex-col items-center lg:items-start lg:pl-36">
+                <h1 class="font-bold text-cyan-500 text-4xl mb-6 lg:mb-8 max-w-md lg:text-5xl">USING NOW:</h1>
+                <div class="lg:flex lg:gap-10">
+                    <div class="flex flex-col gap-2 lg:gap-3 items-center">
+                        <img src="./image/html.png" alt="">
+                        <p class="text-xs lg:text-xl text-white">HTML5</p>
+                    </div>
+                    <div class="flex flex-col gap-2 lg:gap-3 items-center">
+                        <img src="./image/css.png" class="mt-3 lg:mt-0"alt="">
+                        <p class="text-xs lg:text-xl text-white">CSS 3</p>
+                    </div>
+                    <div class="flex flex-col gap-2 lg:gap-3 items-center">
+                        <img src="./image/js.png" class="mt-3 lg:mt-0"alt="">
+                        <p class="text-xs lg:text-xl text-white">JAVASCRIPT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function menu(e) {
+        let list = document.querySelector('ul');
+        e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]'),list.classList.add('opacity-100') ):
+        (e.name='menu',list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'));
+
+    }
+    let typed = new Typed("#bergerak",{
+        strings: ['<i>Andika prasetyo', '<i>hobi saya ngoding<\i>'],
+        typeSpeed: 150,
+        backSpeed:150,
+        looped : true
+    })
+   
+    </script>
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'inter,sans-serif';
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span{
+    color: yellow;
+}
+
+.menu-active > span:nth-child(1){
+    @apply rotate-45;
+}
+@layer components {
+    .menu-line {
+        @apply w-[30px] h-[2px] my-2 block bg-black;
+    }
+    /* .btn-primary {
+      @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    } */
+}
+
+@keyframes cursor {
+    50% {border-color: cyan;}
+}
+
+@keyframes typing {
+    from { width: 0;}
+}
